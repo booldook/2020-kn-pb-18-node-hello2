@@ -1,0 +1,23 @@
+{
+  "name": "18.node-hello2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/booldook/2020-kn-pb-18-node-hello2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/booldook/2020-kn-pb-18-node-hello2/issues"
+  },
+  "homepage": "https://github.com/booldook/2020-kn-pb-18-node-hello2#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
