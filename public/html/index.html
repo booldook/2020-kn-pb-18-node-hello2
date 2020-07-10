@@ -14,8 +14,20 @@
 	<script src="../js/imagesloaded.pkgd.min.js"></script>
 </head>
 <body>
-	<div class="wrapper">
-		
+	<div class="wrapper container">
+		<div class="jumbotron">
+			<h1>회원가입<small>- Express와 연동하는 회원가입 테스트</small></h1>
+			<hr>
+		</div>
+		<form action="/user/save" method="get">
+			<div class="form-inline">
+				<input type="text" class="form-control mr-2" name="userid" placeholder="아이디">
+				<input type="password" class="form-control mr-2" name="userpw" placeholder="패스워드">
+				<input type="text" class="form-control mr-2" name="username" placeholder="이름">
+				<input type="text" class="form-control mr-2" name="email" placeholder="이메일">
+				<button class="btn btn-primary">저장</button>
+			</div>
+		</form>
 	</div>
 	<script src="../js/index.js"></script>
 </body>
