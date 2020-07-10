@@ -1,0 +1,1 @@
+module.exports = () => "함수실행";
