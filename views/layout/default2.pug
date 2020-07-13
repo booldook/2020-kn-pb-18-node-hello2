@@ -1,0 +1,14 @@
+doctype html
+html
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		title
+		include ../inc/css-link.pug
+		include ../inc/js-link.pug
+	body(style="padding-top: 80px;")
+		include ../inc/header.pug
+		.jumbotron
+			block titleBar
+		.cont-wrap.container
+			block contents
