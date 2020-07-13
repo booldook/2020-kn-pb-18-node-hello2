@@ -16,6 +16,32 @@ app.use('/', express.static(publicPath));
 
 
 /******** 동적(dyunamic) 등록 ********/
-app.get('/aaa', (req, res) => {
-	res.send("AAA");
+app.get('/res', (req, res) => {
+	res.send("<h1>응답</h1>");
 });
+
+app.get('/res2', (req, res) => {
+	res.json({
+		firstName: "길동",
+		lastName: "홍"	
+	});
+});
+
+app.get('/res3', (req, res) => {
+	res.download( path.join(__dirname, './public/css/base.css') );
+});
+
+app.get('/res4', (req, res) => {
+	res.redirect('/html/index-hong.html');
+});
+
+app.get('/req', (req, res) => {
+	console.log(req.query.name);
+	console.log(req.query.age);
+	sql = "SELECT * FROM user WHERE name='"+req.query.name+"' AND age="+req.query.age;
+	res.send(sql);
+});
+
+
+
+
