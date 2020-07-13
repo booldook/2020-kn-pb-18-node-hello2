@@ -16,8 +16,6 @@ app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 app.use('/', express.static(path.join(__dirname, './public')));
 
-
-
 app.post('/user/save', (req, res) => {
 	const { userid, userpw, username, email } = req.body;
 	const sql = "INSERT INTO users SET userid=?, userpw=?, username=?, email=?";
