@@ -42,6 +42,28 @@ app.get('/req', (req, res) => {
 	res.send(sql);
 });
 
+app.get('/req2/:title', (req, res) => {
+	const title = req.params.title;
+	const books = {
+		별주부전: '용왕이 나의 간을...',
+		홍길동전: '아버지를 아버지라...',
+		구운몽전: '한여름밤의 꿈...',
+		춘향전: '그네타고 놀다가...',
+		심청전: '아버지 눈을...',
+	};
+	if(books[title])
+		res.send(`<h1>요청하신 ${title}의 내용은 [${books[title]}] 입니다.</h1>`);
+	else
+		res.send(`<h1>요청하신 ${title}을 찾을 수 없습니다.</h1>`);
+});
+
+
+
+
+
+
+// https://github.com/booldook
+
 
 
 
