@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/booldook/2020-kn-pb-18-node-hello2#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "mysql2": "^2.1.0",
     "pug": "^3.0.0"
   }
